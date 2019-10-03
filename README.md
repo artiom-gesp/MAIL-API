@@ -9,3 +9,5 @@ export FLASK_APP=app/app.py
 export FLASK_ENV=development
 flask run
 ```
+
+Please edit config.py to match your database configuration.
