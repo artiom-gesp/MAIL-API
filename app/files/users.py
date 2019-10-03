@@ -36,7 +36,7 @@ def get_user_list():
 
 @user_api.route('/users/<user_id>', methods=['GET'])
 def get_user_by_id(user_id):
-    """Get user by ID from user table
+    """Get user by ID from mailuser table
 
             Returns:
                 JSON: user's name and email address in JSON format
@@ -83,7 +83,7 @@ def create_user():
 
 @user_api.route('/users/<user_id>', methods=['DELETE'])
 def delete_user(user_id):
-    """Delete user from user table
+    """Delete user from mailuser table
 
             Returns:
                 String: Success if operation successful else Error
@@ -116,7 +116,7 @@ def delete_user(user_id):
 
 @user_api.route('/users/<user_id>', methods=['PUT'])
 def update_user(user_id):
-    """Update email from user table
+    """Update email from mailuser table
 
             Returns:
                 String: Success if operation successful else Error
